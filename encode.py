@@ -7,6 +7,7 @@ def _square_encode(key, mode, plaintext):
 def square_encode(key, plaintext):
     mode = 0
     ciphertext = ''
+    #print( ciphertext,' ', plaintext)
     while not plaintext == '':
         result = _square_encode(key, mode, plaintext)
         
@@ -14,5 +15,5 @@ def square_encode(key, plaintext):
         plaintext = result[1]
         mode = result[2]
         #print('r =', result)
-        print( ciphertext,' ', plaintext)
+        #print( ciphertext,' ', plaintext)
     return ciphertext

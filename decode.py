@@ -9,10 +9,11 @@ def _square_decode(key, mode, ciphertext):
 def square_decode(key, ciphertext):
     mode = 0
     plaintext = ''
+    #print( ciphertext,' ', plaintext)
     while not ciphertext == '':
         result = _square_decode(key, mode, ciphertext)
         plaintext += result[0]
         ciphertext = result[1]
         mode = result[2]
-        print('c =', ciphertext, 'p =', plaintext, 'm = ',mode)
+        #print( ciphertext,' ', plaintext)
     return plaintext

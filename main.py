@@ -1,18 +1,12 @@
-import modes
+from demo import *
+from key import *
 from finds import *
-# print(random_finds(
-#     '|O@',
-#     num_words = 8,
-#     max_letters = 4
-# ))
-#finds = ['O','|','O|']
+from rect import *
+alphabet = 'O|'
+max_letters = 7
 num_words = 5
-print(
-    str(
-        modes.random_mode(
-            finds = random_finds('O|@',num_words,4),
-            alphabet = 'O|', 
-            num_words = num_words, 
-            num_letters = 7, 
-            num_modes = num_words
-)))
+num_modes = 5
+#k = random_square_key(alphabet, num_words, max_letters)
+k = random_rect_key(alphabet, num_words, num_modes, max_letters)
+print_key(k)
+demo_words(alphabet,k, 10, 10)
