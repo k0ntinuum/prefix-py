@@ -1,5 +1,5 @@
 
-from words import a_random_word
+from words import *
 
 def _no_repeats(words):
     for i in range(0, len(words)):

@@ -1,6 +1,5 @@
 from secrets import randbelow
-from words import a_random_word
-
+from words import *
 
 def _is_prefix_code(words):
     for i in range(0, len(words)):

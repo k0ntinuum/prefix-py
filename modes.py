@@ -4,7 +4,8 @@ from words import a_random_word
 from prefix_codes import random_prefix_code
 import prefix_codes
 import finds
-def random_mode(finds, alphabet, num_words, num_letters, num_modes):
+
+def random_square_mode(finds, alphabet, num_words, num_letters, num_modes):
     prefix_code = random_prefix_code( alphabet,len(finds), num_letters);
     if prefix_code == []:
         return []
